@@ -1,0 +1,160 @@
+body {
+  background-color: #e8f4f8;
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  animation: slideUp 1.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  color: #222;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: slideInLeft 1.5s ease-in;
+}
+
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.img-container {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+
+.img-container:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+a.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background-color: #006699;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a.cta-button:hover {
+  background-color: #004d80;
+  transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 30px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+
+  .img-container img {
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .cta-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+
+  .img-container img {
+      max-width: 100%;
+  }
+}
+  
