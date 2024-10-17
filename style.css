@@ -9,7 +9,6 @@ body {
   background-color: #e2e8e7;
   color: #333;
   scroll-behavior: smooth;
-
 }
 
 header {
@@ -22,24 +21,27 @@ header {
   justify-content: center;
   align-items: center;
   animation: fadeIn 2s ease-out;
+  padding: 20px;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   animation: slideInFromLeft 1s ease-out;
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
   animation: slideInFromRight 1s ease-out;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   animation: fadeInUp 1.5s ease-out;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav a {
@@ -92,9 +94,9 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 0;
- 
 }
-#services h2{
+
+#services h2 {
   line-height: 2.5;
 }
 
@@ -175,7 +177,7 @@ main {
   transform: scale(1.05);
 }
 
-#contact h2{
+#contact h2 {
   line-height: 2.5;
 }
 
@@ -185,11 +187,16 @@ footer {
   padding: 20px;
   background: #b55454;
   color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer .social-icons {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 footer .social-icons a {
@@ -219,25 +226,18 @@ footer p {
   position: relative;
   animation: fadeInUp 1s ease-out;
   border: 0;
-
-}
-
-#subscription h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
 }
 
 #subscription form {
- display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
 #subscription input[type="email"] {
   padding: 10px;
   font-size: 1.2em;
-  width: 300px;
+  width: 100%;
   border-radius: 25px;
   border: none;
   outline: none;
@@ -264,6 +264,38 @@ footer p {
 #subscription button:hover {
   background-color: #555;
   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #services ul {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 15px;
+    text-align: center;
+  }
+
+  #subscription form {
+    flex-direction: column;
+  }
+
+  #subscription input[type="email"] {
+    width: 100%;
+  }
 }
 
 
