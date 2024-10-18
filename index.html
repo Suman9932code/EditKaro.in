@@ -7,29 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
   <header>
     <h1>Editkaro.in</h1>
     <p><em>Social Media Marketing & Video Editing</em></p>
     <nav>
       <a href="#services"><strong>Services</strong></a>
+      <a href="#about"><strong>About Us</strong></a>
       <a href="#contact"><strong>Contact</strong></a>
     </nav>
-    
-  
-    <section id="subscription">
+
+    <section id="subscription" class="animated-section">
       <form name="sub-to-google-sheet">
         <label for="Email">Email:</label>
         <input type="email" id="email-subscribe" placeholder="Enter your email id" name="Email" required>
-        <button type="submit">Subscribe</button>
+        <button type="submit" class="btn-animated">Subscribe</button>
       </form>
     </section>
   </header>
 
   <main>
-    <section id="services">
+    <section id="services" class="animated-section">
       <h2>Our Services & Portfolio</h2>
-      <ul>
+      <ul class="services-list">
         <li><a href="social.html">Social Media Management</a></li>
         <li><a href="content.html">Content Creation</a></li>
         <li><a href="short.html">Short-form Video Editing</a></li>
@@ -43,18 +42,34 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="about" class="animated-section">
+      <h2>About Us</h2>
+      <p>
+        <strong>Mission:</strong> At Editkaro.in, our mission is to help brands and influencers 
+        grow their presence on social media through high-quality video content.
+      </p>
+      <p>
+        <strong>Vision:</strong> We envision a world where every brand can tell their story 
+        through engaging and professional content, no matter the platform.
+      </p>
+      <p>
+        Our team of skilled video editors and marketers works closely with clients to ensure 
+        that every piece of content resonates with their target audience.
+      </p>
+    </section>
+
+    <section id="contact" class="animated-section">
       <h2>Contact Us</h2>
       <form name="submit-to-google-sheet">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
         <label for="number">Phone number:</label>
-        <input type="text" id="number" name="number">
+        <input type="text" id="number" name="number" placeholder="Your Phone Number">
         <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Send Message</button>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn-animated">Send Message</button>
       </form>
     </section>
   </main>
@@ -65,7 +80,6 @@
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
 
