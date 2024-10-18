@@ -298,6 +298,76 @@ footer p {
   }
 }
 
+#about {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  animation: fadeIn 1s ease-out;
+}
+
+#about h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 80px;
+  height: 3px;
+  background-color: #1e90ff;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  animation: fadeInUp 1.5s ease;
+}
+
+#about .mission,
+#about .vision {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+#about .mission:hover,
+#about .vision:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about .mission h3,
+#about .vision h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #6bdea1;
+  text-align: center;
+}
+
+#about .mission p,
+#about .vision p {
+  font-size: 1rem;
+  color: #555;
+}
+
 
 
 
